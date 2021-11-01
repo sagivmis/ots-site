@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 10px;
+}
+.grid-container {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 100px;
+    /* position: absolute; */
+    background-color: #00bb70;
+    border: #020102 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+}

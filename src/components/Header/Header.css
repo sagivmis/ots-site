@@ -1,0 +1,64 @@
+.header {
+    /* width: 100%; */
+    height: 110px;
+    transition: 2s all;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.scrolled {
+    background-color: #00ff99;
+    transition: 2s all;
+    transform: scale(1);
+}
+
+.logo {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 300px;
+    transform: scale(3.5);
+}
+
+.avatar {
+    position: absolute;
+    right: 290px;
+    top: 2px;
+    width: 150px;
+    transform: scale(3.5);
+}
+.reset-scale {
+    transform: scale(1);
+}
+.big-logo {
+    left: 42.5%;
+    top: 350px;
+}
+
+.big-avatar {
+    animation-name: move-avatar;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    top: 600px;
+}
+
+@keyframes move-avatar {
+    0% {
+        left: 15.5%;
+    }
+    70% {
+        left: 78.5%;
+    }
+    100% {
+        left: 15.5%;
+    }
+}
+
+/* 
+    #001642 DARK BLUE
+    #ff002a GLOW RED
+    #00ff99 GLOW GREEN
+*/

@@ -1,0 +1,32 @@
+.details {
+    position: absolute;
+    display: inline-block;
+    background-color: #00bb70;
+    left: 170px;
+    top: 27.5px;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: #020102 2px solid;
+}
+.token {
+    position: absolute;
+    left: 5px;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.price {
+    position: relative;
+    border-radius: 5px;
+    height: 45px;
+    top: 2px;
+    width: 185px;
+    background-color: #00bb70;
+    /* filter: brightness(0.8); */
+    left: 60px;
+
+    color: white;
+    font-size: 30px;
+}

@@ -1,0 +1,10 @@
+.grid-tokenomics {
+    position: relative;
+    top: 1000px;
+    left: 3.5%;
+    /* top: 500px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    transition: 2s all;
+}

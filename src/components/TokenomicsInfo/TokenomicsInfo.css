@@ -1,0 +1,12 @@
+.grid-item {
+    background-color: azure;
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    transition: 2s all;
+}
+.scrolled-down {
+    transition: 2s all;
+
+    display: block;
+}
