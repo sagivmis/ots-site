@@ -1,0 +1,33 @@
+.bg-title-tokenomics {
+    position: relative;
+    top: 1120px;
+    transform: scale(1.15);
+}
+.bg-title-partners {
+    position: relative;
+    top: 750px;
+    transform: scale(1.15);
+}
+
+.title-tokenomics {
+    position: relative;
+    top: 750px;
+    font-size: 120px;
+    font-family: "Sedgwick Ave", cursive;
+
+    color: #001642;
+}
+
+.title-partners {
+    position: relative;
+    top: 380px;
+    font-size: 120px;
+    font-family: "Sedgwick Ave", cursive;
+
+    color: #001642;
+}
+/* 
+    #001642 DARK BLUE
+    #ff002a GLOW RED
+    #00ff99 GLOW GREEN
+*/

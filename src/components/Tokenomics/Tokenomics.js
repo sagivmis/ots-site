@@ -1,26 +1,35 @@
 import "./Tokenomics.css";
 import TokenomicsInfo from "../TokenomicsInfo/TokenomicsInfo";
+import background from "../../images/BG.png";
 
 const Tokenomics = () => {
     const tokenomics = [
-        <TokenomicsInfo title='BURN' text='10% BURN' key='1' />,
-        <TokenomicsInfo
-            title='BUYBACK'
-            text='3% BUYBACK WALLET FOR DIPS'
-            key='2'
-        />,
-        <TokenomicsInfo
-            title='MARKETING'
-            text='2% GOES TO MARKETING'
-            key='3'
-        />,
-        <TokenomicsInfo
-            title='SPECIAL FUNCTION'
-            text='SPECIAL EFFECT ON HOLDERS'
-            key='3'
-        />,
+        { title: "BURN", text: "10% BURN", id: "1" },
+        { title: "BUYBACK", text: "3% BUYBACK WALLET FOR DIPS", id: "2" },
+        { title: "MARKETING", text: "2% GOES TO MARKETING", id: "3" },
+        {
+            title: "SPECIAL FUNCTION",
+            text: "SPECIAL EFFECT ON HOLDERS",
+            id: "4",
+        },
     ];
-    return <div className={`grid-tokenomics `}>{tokenomics}</div>;
+
+    return (
+        <div className={`grid-tokenomics `}>
+            {tokenomics.map((detail) => {
+                return (
+                    <div>
+                        <img src={background} alt='bg' className='bg' />
+                        <TokenomicsInfo
+                            title={detail.title}
+                            text={detail.text}
+                            key={detail.id}
+                        />
+                    </div>
+                );
+            })}
+        </div>
+    );
 };
 
 export default Tokenomics;

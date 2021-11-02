@@ -4,9 +4,13 @@
     height: 250px;
     border-radius: 15px;
     transition: 2s all;
+    z-index: 10;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
 }
 .scrolled-down {
     transition: 2s all;
+    z-index: 10;
 
     display: block;
 }
