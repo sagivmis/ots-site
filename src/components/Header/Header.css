@@ -1,5 +1,6 @@
 .header {
     /* width: 100%; */
+    position: relative;
     height: 110px;
     transition: 2s all;
     padding: 10px 10px;
@@ -43,6 +44,25 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     top: 600px;
+}
+
+.type-writer {
+    opacity: 1;
+    position: absolute;
+    top: 25px;
+    right: 10%;
+    font-size: 50px;
+    font-family: "Chewy", cursive;
+    font-weight: 600;
+    font-style: italic;
+    color: #ff002a;
+    transition: all 2s;
+
+    /* color: aliceblue; */
+}
+.type-writer-scrolled {
+    opacity: 0;
+    transition: all 2s;
 }
 
 @keyframes move-avatar {

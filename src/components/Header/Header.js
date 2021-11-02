@@ -3,10 +3,12 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 import logo from "../../images/OST-LOGO-NAME.png";
 import avatar from "../../images/ost-avatar.png";
+import Typewriter from "typewriter-effect";
 
 const Header = () => {
     const [y, setY] = useState(0);
     const [scrolledClass, setClass] = useState("");
+    const [typeClass, setTypeClass] = useState("type-writer");
 
     const handleNavigation = useCallback(
         (e) => {
@@ -25,7 +27,11 @@ const Header = () => {
     const handleScrollDown = useCallback(() => {
         if (y > 50) {
             setClass("scrolled");
-        } else setClass("");
+            setTypeClass("type-writer-scrolled");
+        } else {
+            setClass("");
+            setTypeClass("type-writer");
+        }
     }, [y]);
 
     useEffect(() => {
@@ -44,6 +50,19 @@ const Header = () => {
     return (
         <div className={`header ${scrolledClass}`}>
             <NavBar scrolled={scrolledClass} />
+
+            <div className={typeClass}>
+                <Typewriter
+                    options={{
+                        strings: [
+                            "Join The Revolution",
+                            "We are waiting for you",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
+            </div>
             <img
                 src={logo}
                 alt='logo'
