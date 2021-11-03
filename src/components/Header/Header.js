@@ -25,7 +25,7 @@ const Header = () => {
     );
 
     const handleScrollDown = useCallback(() => {
-        if (y > 50) {
+        if (y > 150) {
             setClass("scrolled");
             setTypeClass("type-writer-scrolled");
         } else {
@@ -66,12 +66,16 @@ const Header = () => {
             <img
                 src={logo}
                 alt='logo'
-                className={`logo ${y > 50 ? "reset-scale" : "big-logo"}`}
+                className={`logo ${
+                    y > 150 ? "reset-scale shadow" : "big-logo shadow"
+                }`}
             />
             <img
                 src={avatar}
                 alt='avatar'
-                className={`avatar ${y > 50 ? "reset-scale" : "big-avatar"}`}
+                className={`avatar ${
+                    y > 150 ? "reset-scale shadow" : "big-avatar"
+                }`}
             />
         </div>
     );

@@ -1,10 +1,13 @@
 .grid-item {
-    background-color: azure;
-    width: 350px;
-    height: 250px;
+    position: relative;
+    background-color: rgba(1, 1, 1, 0.53);
+    width: 250px;
+    height: 80px;
+    left: 17.5%;
     border-radius: 15px;
     transition: 2s all;
     z-index: 10;
+    color: #00ff99;
     padding: 10px;
     font-family: "Roboto", sans-serif;
 }
@@ -14,3 +17,12 @@
 
     display: block;
 }
+.text {
+    position: relative;
+    top: 40px;
+}
+/* 
+    #001642 DARK BLUE
+    #ff002a GLOW RED
+    #00ff99 GLOW GREEN
+*/

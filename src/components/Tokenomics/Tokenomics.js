@@ -8,7 +8,7 @@ const Tokenomics = () => {
         { title: "BUYBACK", text: "3% BUYBACK WALLET FOR DIPS", id: "2" },
         { title: "MARKETING", text: "2% GOES TO MARKETING", id: "3" },
         {
-            title: "SPECIAL FUNCTION",
+            title: "SPECIAL",
             text: "SPECIAL EFFECT ON HOLDERS",
             id: "4",
         },

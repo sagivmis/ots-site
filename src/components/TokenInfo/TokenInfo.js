@@ -4,7 +4,7 @@ import "./TokenInfo.css";
 
 const TokenInfo = () => {
     return (
-        <div className='details'>
+        <div className='details shadow'>
             <img src={token} alt='token' className='token' />
             <div className='price'>$0.001203</div>
         </div>

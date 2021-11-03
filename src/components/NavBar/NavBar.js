@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBarButtons from "../NavBarButtons/NavBarButtons";
+import Path from "../Path/Path";
 import TokenInfo from "../TokenInfo/TokenInfo";
 import "./NavBar.css";
 
@@ -22,6 +23,12 @@ const NavBar = ({ scrolled }) => {
             )}
 
             <TokenInfo />
+
+            <Path text='About us' />
+            <Path text='Buy $OST' />
+            <Path text='Our Vision' />
+            <Path text='Contact us' />
+            <Path text='Careers' />
         </div>
     );
 };

@@ -38,8 +38,8 @@ const TokenomicsInfo = ({ title, text }) => {
 
     return (
         <div className={scrolledClass}>
-            <h1>{title}</h1>
-            {text}
+            <h1 className='aura'>{title}</h1>
+            <p className='text'>{text}</p>
         </div>
     );
 };

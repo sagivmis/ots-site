@@ -1,0 +1,22 @@
+.path {
+    position: relative;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #001642;
+    transition: all 3s;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+}
+.path:hover {
+    color: #ff002a;
+    transition: all 1s;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+/* 
+    #001642 DARK BLUE
+    #ff002a GLOW RED
+    #00ff99 GLOW GREEN
+*/

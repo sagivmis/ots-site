@@ -17,7 +17,7 @@ const NavBarButtons = ({ show, toggleShow }) => {
         <Button text='...' color={"#00ff99"} key='1' onClick={toggleShow} />,
     ];
     return (
-        <div className='grid-container'>
+        <div className='grid-container shadow'>
             {show && <div className='grid'>{navbarButtons}</div>}
             {!show && <div className='grid'>{showButtons} </div>}
         </div>

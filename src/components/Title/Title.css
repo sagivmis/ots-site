@@ -26,6 +26,14 @@
 
     color: #001642;
 }
+.aura {
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(180, 180, 180));
+    filter: drop-shadow(5px 5px 5px rgb(175, 175, 175));
+}
+.shadow {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
 /* 
     #001642 DARK BLUE
     #ff002a GLOW RED
