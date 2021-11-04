@@ -1,14 +1,10 @@
 # ots-site
 
-![GIF](/src/images/website.gif)
-
 <details><summary>History</summary><p>
 
 ## _formatted_ **heading** with [a](link)
 
----
-{{standard 3-backtick code block omitted from here due to escaping issues}}
----
-
-Collapsible until here.
+<details><summary>v1</summary><p>
+![GIF](/src/images/website.gif)
+  
 </p></details>
