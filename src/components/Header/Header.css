@@ -43,6 +43,7 @@
 }
 
 .big-avatar {
+    z-index: 0;
     animation-name: move-avatar;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -73,7 +74,7 @@
         left: 15.5%;
     }
     70% {
-        left: 78.5%;
+        left: 80.5%;
     }
     100% {
         left: 15.5%;

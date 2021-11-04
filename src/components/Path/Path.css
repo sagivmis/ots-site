@@ -4,16 +4,18 @@
     font-size: 30px;
     font-weight: 300;
     color: #001642;
-    transition: all 3s;
+    transition: all 2s;
     cursor: pointer;
     display: inline-block;
     font-family: "Roboto", sans-serif;
 }
 .path:hover {
+    transform: scale(1.1);
+    /* font-size: 40px; */
     color: #ff002a;
-    transition: all 1s;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    transition: all 0.5s;
+    -webkit-filter: drop-shadow(1px 1px 4px #ffffff);
+    filter: drop-shadow(1px 1px 1px #ffffff);
 }
 /* 
     #001642 DARK BLUE
