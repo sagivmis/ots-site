@@ -5,6 +5,7 @@
 ## _formatted_ **heading** with [a](link)
 
 <details><summary>v1</summary><p>
+  <img src="/src/images/website.gif" alt="GIF"/>
 ![GIF](/src/images/website.gif)
   
 </p></details>
