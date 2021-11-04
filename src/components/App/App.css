@@ -29,6 +29,13 @@
     color: #61dafb;
 }
 
+/* .tokenomics-container {
+    position: relative;
+    top: 1400px;
+    background-color: #00ff99;
+    width: 100%;
+} */
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -37,3 +44,8 @@
         transform: rotate(360deg);
     }
 }
+/* 
+    #001642 DARK BLUE
+    #ff002a GLOW RED
+    #00ff99 GLOW GREEN
+*/

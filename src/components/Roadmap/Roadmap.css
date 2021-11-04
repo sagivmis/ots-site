@@ -3,7 +3,7 @@
 }
 .roadmap-grid {
     position: relative;
-    top: 500px;
+    top: 700px;
     left: 14%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));

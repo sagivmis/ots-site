@@ -17,9 +17,7 @@ function App() {
         (e) => {
             const window = e.currentTarget;
             if (y > window.scrollY) {
-                console.log("scrolling up");
             } else if (y < window.scrollY) {
-                console.log("scrolling down");
             }
 
             setY(window.scrollY);
@@ -51,20 +49,20 @@ function App() {
     return (
         <div className='App'>
             <Header />
-            {
+            <div className='tokenomics-container'>
                 <Title
                     text='TOKENOMICS'
                     bg={redSmudge}
                     bgClass='tokenomics'
                     fontClass=''
                 />
-            }
-            {<Tokenomics />}
+                <Tokenomics />
+            </div>
             <Title text='PARTNERS' bg={redSmudge} bgClass='partners' />
             <Partners />
             <Title text='ROADMAP' bg={redSmudge} bgClass='partners' />
             {!showRoadMap && <Roadmap scrolled={false} />}
-            {showRoadMap && <Roadmap scrolled={true} />}
+            {showRoadMap && <Roadmap scrolled={true} windowY={y} />}
             <Footer />
         </div>
     );

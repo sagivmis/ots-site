@@ -15,9 +15,7 @@ const Header = () => {
         (e) => {
             const window = e.currentTarget;
             if (y > window.scrollY) {
-                console.log("scrolling up");
             } else if (y < window.scrollY) {
-                console.log("scrolling down");
             }
 
             setY(window.scrollY);
