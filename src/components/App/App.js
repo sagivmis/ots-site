@@ -7,11 +7,12 @@ import Tokenomics from "../Tokenomics/Tokenomics";
 import Title from "../Title/Title";
 import redSmudge from "../../images/red-smudge-decorate.png";
 import Partners from "../Partners/Partners";
-
+import Roadmap from "../Roadmap/Roadmap";
 function App() {
     const [y, setY] = useState(0);
     const [tokenomics, setTokenomics] = useState(false);
 
+    const showRoadMap = y > 2650;
     const handleNavigation = useCallback(
         (e) => {
             const window = e.currentTarget;
@@ -61,6 +62,9 @@ function App() {
             {<Tokenomics />}
             <Title text='PARTNERS' bg={redSmudge} bgClass='partners' />
             <Partners />
+            <Title text='ROADMAP' bg={redSmudge} bgClass='partners' />
+            {!showRoadMap && <Roadmap scrolled={false} />}
+            {showRoadMap && <Roadmap scrolled={true} />}
             <Footer />
         </div>
     );

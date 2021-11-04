@@ -4,6 +4,7 @@ import "./Header.css";
 import logo from "../../images/OST-LOGO-NAME.png";
 import avatar from "../../images/ost-avatar.png";
 import Typewriter from "typewriter-effect";
+const passedY = 200;
 
 const Header = () => {
     const [y, setY] = useState(0);
@@ -25,7 +26,7 @@ const Header = () => {
     );
 
     const handleScrollDown = useCallback(() => {
-        if (y > 150) {
+        if (y > passedY) {
             setClass("scrolled");
             setTypeClass("type-writer-scrolled");
         } else {
@@ -67,14 +68,14 @@ const Header = () => {
                 src={logo}
                 alt='logo'
                 className={`logo ${
-                    y > 150 ? "reset-scale shadow" : "big-logo shadow"
+                    y > passedY ? "reset-scale shadow" : "big-logo shadow"
                 }`}
             />
             <img
                 src={avatar}
                 alt='avatar'
                 className={`avatar ${
-                    y > 150 ? "reset-scale shadow" : "big-avatar"
+                    y > passedY ? "reset-scale shadow" : "big-avatar"
                 }`}
             />
         </div>
